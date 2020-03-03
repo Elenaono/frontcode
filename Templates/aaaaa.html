@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 引入样式 -->
+		<!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">-->
+		<!-- 引入组件库 -->
+		<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<style type="text/css">
+			
+			
+			
+			/*.el-carousel__item h3 {
+			    color: #475669;
+			    font-size: 18px;
+			    opacity: 0.75;
+			    line-height: 300px;
+			    margin: 0;
+			  }
+			  
+			  .el-carousel__item:nth-child(2n) {
+			    background-color: #99a9bf;
+			  }
+			  
+			  .el-carousel__item:nth-child(2n+1) {
+			    background-color: #d3dce6;
+			  }*/
+			  
+			  
+			  
+			  
+			  
+			 body{
+        background: white;
+       }
+        #first{
+            position: relative;
+            top: 170px;
+            left: 30%
+        }
+        #second{
+            position: relative;
+            top: -60px;
+            right: 545px;
+            z-index: -1;
+        }
+        .picf{
+            position: relative;
+            float: left;
+            background-size: 100% 100%;
+        }
+        .pics{
+            position: relative;
+            float: right;
+            background-size: 100% 100%;
+        }
+        #p1{
+            width: 100px;
+            height: 250px;
+            transform: skewY(49deg);
+        }
+        #p2{
+            width: 200px;
+            height: 250px;
+            transform: translateY(58px); 
+        }
+        #p3{
+            width: 100px;
+            height: 250px;
+            transform: skewY(-49deg);
+        }
+        #p4{
+             width: 100px;
+            height: 250px;
+            transform: skewY(49deg) translateY(116px);
+        }
+        #p5{
+            width: 200px;
+            height: 250px;
+            transform: translateY(58px); 
+        }
+        #p6{
+          width: 100px;
+            height: 250px;
+            transform: skewY(-49deg) translateY(116px);
+        }
+        button{
+            position: relative;
+            top:500px;
+            left: 150px;
+        }
+		</style>
+	</head>
+	<body>
+    <!--
+		<el-carousel indicator-position="outside">
+		    <el-carousel-item v-for="item in 4" :key="item">
+		      <h3>{{ item }}</h3>
+		    </el-carousel-item>
+		</el-carousel>
+		<ul id="RunTopic">
+			<li>文字1</li>
+			<li>文字2</li>
+			<li>文字3</li>
+			<li>文字4</li>
+			<li>文字5</li>
+		</ul>
+		<input type="button" onclick="test();" value="test">-->
+        
+        
+        
+			<div id="first">
+        <div id="p1" class="picf"></div>
+        <div id="p2" class="picf"></div>
+        <div id="p3" class="picf"></div>
+    </div>
+    <div id="second">
+        <div id="p4" class="pics"></div>
+        <div id="p5" class="pics"></div>
+        <div id="p6" class="pics"></div>
+    </div>
+    <button id="pre_pic" onclick="pre_pic()">上一张</button>
+    <button id="next_pic" onclick="next_pic()">下一张</button>
+	</body>
+	<script type="text/javascript">
+	
+	
+	
+//		function test()
+//		{
+//			$("#RunTopic").find("li:first").appendTo($("#RunTopic"));
+//		}
+
+
+
+
+ var div=[];
+       for(var i=0;i<6;i++){
+        div[i]=document.getElementById('p'+(i+1)); 
+       }
+        for(var i=0;i<6;i++){
+           div[i].style.backgroundImage="url(../image/gallery-img"+((n+i)%6+1)+".jpg)";
+       }
+       var n=0;
+       function pre_pic(){
+           n=n+5;
+           for(var i=0;i<6;i++){
+             div[i].style.backgroundImage="url(../image/gallery-img"+((n+i)%6+1)+".jpg)";
+            }
+         }
+       function next_pic(){
+           n++;
+     for(var i=0;i<6;i++){
+       div[i].style.backgroundImage="url(../image/gallery-img"+((n+i)%6+1)+".jpg)";
+      }  
+    }
+	</script>
+</html>

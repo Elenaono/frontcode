@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>车行集新车资讯、购车、自驾旅游于一体的网站</title>
+<meta name="keywords" content="slate, portfolio theme, darkcyan, teal color, free templates, website design, CSS, HTML" />
+<meta name="description" content="Slate Portfolio, free web design template provided by templatemo.com" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+
+<script language="javascript" type="text/javascript">
+function clearText(field){
+
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="js/twoflanks.js"></script>
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+<link href="css_pirobox/white/style.css" media="screen" title="shadow" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/piroBox.1_2.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$().piroBox({
+			my_speed: 600, 
+			bg_alpha: 0.5, 
+			radius: 4, 
+			scrollImage : false, 
+			pirobox_next : 'piro_next', 
+			pirobox_prev : 'piro_prev',
+			close_all : '.piro_close',
+			slideShow : 'slideshow', 
+			slideSpeed : 4 
+	});
+});
+</script>
+
+<body>
+
+<div id="templatemo_wrapper">
+
+	
+    <div id="templatemo_main">
+    	<div class="gallery_box">
+            <h2><strong><a href="http://www.visitbeijing.com.cn/" target="_blank">北京</a></strong></h2>
+            <ul class="gallery">
+                <li><a class="pirobox" href="../image/gallery-img5.jpg"><img src="../image/gallery-img5.jpg" alt="Image 01" /></a></li>
+                
+                <li><a class="pirobox" href="img/故宫.jpg"><img src="img/故宫.jpg" alt="Image 03" /></a></li>
+                <li><a class="pirobox" href="img/天坛.jpg"><img src="img/天坛.jpg" alt="Image 04" /></a></li>
+            </ul>
+			<div class="cleaner"></div>
+           
+        </div>    
+  >
+           
+        </div>
+
+    </div>
+
+            <div>
+      <img src="img/横幅.gif"></img>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>
